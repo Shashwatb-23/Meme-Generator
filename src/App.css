@@ -1,7 +1,11 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
 .logo{
-  margin-right: 12px;
+  margin: 12px;
   width: 36px;
-  margin-left: 10px;
 }
 
 .head{
@@ -10,4 +14,42 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.navbar{
+    margin-top: 23px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.frame{
+  width: 15px;
+}
+
+.btn{
+  background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  width: 477px;
+  height: 40px;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.input{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+input{
+  width: 100px;
+  height: 26px;
+  border: 2px solid gray ;
 }
