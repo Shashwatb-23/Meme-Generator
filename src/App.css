@@ -1,7 +1,13 @@
 .logo{
-  width: 40px;
+  margin-right: 12px;
+  width: 36px;
+  margin-left: 10px;
 }
 
 .head{
-  background-color: #672280;
+  background: linear-gradient(90deg, rgba(103,34,128,1) 0%, rgba(166,38,211,1) 100%);
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
