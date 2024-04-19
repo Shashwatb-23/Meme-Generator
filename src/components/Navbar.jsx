@@ -3,11 +3,11 @@ export default function Navbar(){
             <div className="navbar">
                 <div className="input-field">
                     <div className="top-text">
-                        <h4>Top text: </h4>
+                        {/* <h4>Top text </h4> */}
                         <input type="text" maxLength={50} placeholder="Top text"/>
                     </div>
                     <div className="bottom-text">
-                        <h4>Bottom text: </h4>
+                        {/* <h4>Bottom text </h4> */}
                         <input type="text" maxLength={50} placeholder="Bottom text"/>
                     </div>
                 </div>
