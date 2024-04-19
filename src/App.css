@@ -67,3 +67,14 @@ h4{
   font-weight: 500;
   font-size: small;
 }
+
+.output{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.coverimg{
+  width: 451px;
+  border-radius: 5px;
+}
