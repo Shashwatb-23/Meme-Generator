@@ -2,11 +2,23 @@ import memeData from "./memeData"
 import React from "react";
 
 export default function Navbar(){
-    const [memeImage, setmemeImage] = React.useState("")
+    // const [memeImage, setmemeImage] = React.useState("http://i.imgflip.com/1bij.jpg")
+    const [meme , setMeme]=React.useState({
+        topText:"",
+        bottomText:"",
+        randomImage:"http://i.imgflip.com/1bij.jpg"
+    })
+
+    const [allMemeImages, setAllMemeImages]=(memeData)
+
     function getMemeImage(){
-        const memeArray = memeData.data.memes;
+        const memeArray = allMemeImages.data.memes;
         const randomNumber= Math.floor(Math.random()*memeArray.length)
-        setmemeImage(memeArray[randomNumber].url)
+        const url = memeArray[randomNumber].url
+        setMeme(prevMeme=>({
+            ...prevMeme,
+            randomImage:url
+        }))
     }
     return(
             <div className="navbar">
@@ -24,7 +36,7 @@ export default function Navbar(){
                         <button className="btn" onClick={getMemeImage}>Get a new meme image <img src="/images/frame.jfif" alt="" className="frame"/></button>
                     </div>
                     <div className="output">
-                        <img src={memeImage} alt="coverImg" className="coverimg" />
+                        <img src={meme.randomImage} alt="coverImg" className="coverimg" />
                     </div>
             </div>
         )
